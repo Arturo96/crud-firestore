@@ -13,17 +13,62 @@
 		<title>CRUD Firestore</title>
 	</head>
 	<body>
-        <h1>CRUD Firestore</h1>
+		<div class="container p-2">
+			<h1 class="text-center">CRUD Firestore</h1>
+			
+			<hr />
+			<div class="row justify-content-center">
+				<div class="col-md col-lg-6">
+					<div class="card">
+						<div class="card-body">
+							<form action="" id="formTask" class="p-3">
+								<div class="form-group">
+				
+									<div class="row">
+										<label for="taskTitle" class="col-form-label">	
+											Titulo de la tarea:	
+										</label>
+										<input type="text" id="taskTitle" class="form-control" autofocus>
+									</div>
+								</div>
+					
+								<div class="form-group">
+									<div class="row">
+										<label for="taskDesc" class="col-form-label">				
+											Descripción:	
+										</label>
+										<textarea name="" id="taskDesc" rows="3" class="form-control"></textarea>
+									</div>
+
+									<button type="submit" class="btn btn-primary" id="btnAddTask" >Agregar</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <ul class="list-group mt-5" id="tareas"></ul> -->
+
+			<div class="table-responsive">
+				<table class="table table-dark mt-5">
+					<thead>
+						<th>Tarea</th>
+						<th>Descripción</th>
+						<th>Acción</th>
+					</thead>
+					<tbody id="tareas">
+	
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
         
-        
-
-
-
-
-
-
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
 		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+		<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 
 		<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->

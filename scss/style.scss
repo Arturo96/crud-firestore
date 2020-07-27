@@ -1,9 +1,41 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
+form, .card-body {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+button {
+    margin-top: 1rem;
+}
+
+th {
+    text-align: center;
+}
+
+tbody {
+    td {
+        text-align: center;
+    }
+
+    button {
+        margin-top: 0;
+    }
+} 
+
 body {
-    background-color: aqua;
+	background-color: #fffd82;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card {
+    border-radius: 20px;
 }
